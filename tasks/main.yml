@@ -1,0 +1,9 @@
+---
+
+- name: install KrakenUniq via conda
+  conda_install:
+    name: "krakenuniq"
+    version: "{{ version }}"
+    executable: "{{ conda_executable }}"
+    channel: "bioconda"
+    environment: "krakenuniq_{{ env_name }}"
